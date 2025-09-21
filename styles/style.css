@@ -1025,6 +1025,7 @@ main {
 
 .travel {
   padding-top: clamp(50px, 5vw, 100px);
+  overflow: hidden;
 }
 
 .travel__inner {
@@ -1499,6 +1500,7 @@ main {
 /* 料金表 */
 .price{
   padding-bottom: 5px;
+  overflow: hidden;
 }
 
 .price__title,
