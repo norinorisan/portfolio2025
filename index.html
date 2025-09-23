@@ -52,8 +52,13 @@
     <script src="scripts/libs/mobile-menu.js" defer></script>
 
     <script src="scripts/libs/text-animation.js" defer></script>
+    <script src="scripts/libs/accordion.js" defer></script>
+    <script src="scripts/libs/gsap.js" defer></script>
+    
     <script src="scripts/main.js" defer></script>
-    <script src="scripts/gsap.js" defer></script>
+
+
+    <!-- <script src="scripts/gsap.js" defer></script> -->
   </head>
   <body>
     <div id="global-container">
@@ -884,22 +889,12 @@
           </section>
           <section class="door">
             <div class="door__content">
-              <div class="door-text">Let's play cording!</div>
+              <div class="door-text">Thank you for watching!</div>
               <div class="door-left">
-                <img
-                  src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NTY5NjEyOTh8&ixlib=rb-4.1.0&q=85"
-                  alt=""
-                  width=""
-                  height=""
-                />
+                <img loading="lazy" src="images/door_image1.jpg" />
               </div>
               <div class="door-right">
-                <img
-                  src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NTY5NjEzNTl8&ixlib=rb-4.1.0&q=85"
-                  alt=""
-                  width=""
-                  height=""
-                />
+                <img loading="lazy" src="images/door_image2.jpg" />
               </div>
             </div>
           </section>
@@ -1005,7 +1000,7 @@
                         </span> </span
                       ><br />
                       <span class="text-flow__line">
-                        <span class="text-flow__cover" style="--delay: 2.0s"
+                        <span class="text-flow__cover" style="--delay: 2s"
                           >この気持ちがぼくの原動力です。
                         </span>
                         <span
@@ -1025,7 +1020,7 @@
                         </span>
                       </span>
                       <span class="text-flow__line">
-                        <span class="text-flow__cover" style="--delay: 3.0s"
+                        <span class="text-flow__cover" style="--delay: 3s"
                           >ホームページには「届けたい思い」があると思います。
                         </span>
                         <span
@@ -1594,6 +1589,50 @@
                 </div>
                 <!-- /.price__container -->
               </section>
+              <section class="qa" id="qa">
+                <h2 class="qa__title section-title">
+                  <span>Q</span><span>&</span><span>A</span>
+                </h2>
+
+                <div class="qa__item qa__container">
+                  <button class="qa__question">
+                    Q.相談やヒヤリングってどうやって行うの？
+                    <span class="qa__icon"></span>
+                  </button>
+                  <div class="qa__answer">
+                    <p>
+                      A.基本的にはZoomやE-mail等オンラインで相談・ヒヤリングをさせて頂きます。
+                    </p>
+                  </div>
+                </div>
+
+                <div class="qa__item">
+                  <button class="qa__question">
+                    Q.連絡が可能な時間帯はいつ？
+                    <span class="qa__icon"></span>
+                  </button>
+                  <div class="qa__answer">
+                    <p>
+                      A.メールであれば平日9時～23時頃まで3時間以内にご対応いたします。
+                      <br />Zoomは平日19時～23時頃までご対応可能です。
+                      <br>必要に応じて土日や早朝・夜の稼働も可能です。
+                    </p>
+                  </div>
+                </div>
+
+                <div class="qa__item">
+                  <button class="qa__question">
+                    Q.納期ってどのくらいかかるの？
+                    <span class="qa__icon"></span>
+                  </button>
+                  <div class="qa__answer">
+                    <p>
+                      A.
+                      内容により異なりますが、LPのデザインは現在1週間を目安にしております。
+                    </p>
+                  </div>
+                </div>
+              </section>
             </main>
             <aside class="side right">
               <div class="side__inner">
@@ -1637,6 +1676,12 @@
             <a class="mobile-menu__link" href="about.html">
               <span class="main-title">About</span>
               <span class="sub-title">私たちについて</span>
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#qa">
+              <span class="main-title">Q&A</span>
+              <span class="sub-title">よくあるご質問</span>
             </a>
           </li>
           <li class="mobile-menu__item">
