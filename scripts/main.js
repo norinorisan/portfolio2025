@@ -1,4 +1,3 @@
-
 class Main {
   #observers = [];
 
@@ -11,6 +10,7 @@ class Main {
 
   #init() {
     new MobileMenu();
+
     Pace.on("done", this.#scrollInit.bind(this));
   }
 
@@ -19,6 +19,15 @@ class Main {
   }
 
   #scrollInit() {
+    if (
+      typeof Accordion !== "undefined" &&
+      document.querySelector(".qa__item")
+    ) {
+      new Accordion(".qa__item");
+    }
+    if (typeof initGsapAnimations === "function") initGsapAnimations();
+    if (typeof initGridAnimation === "function") initGridAnimation();
+    
     this.#observers.push(
       new ScrollObserver("#main-content", this.#sideAnimation.bind(this), {
         once: false,
@@ -33,8 +42,7 @@ class Main {
       new ScrollObserver(".cover-slide", this.#inviewAnimation),
       new ScrollObserver(".appear", this.#inviewAnimation),
       new ScrollObserver(".text-flow__cover", this.#inviewAnimation),
-      new ScrollObserver(".tween-animate-title", this.#textAnimation),
-
+      new ScrollObserver(".tween-animate-title", this.#textAnimation)
     );
     console.log(this.#observers);
   }
@@ -53,7 +61,6 @@ class Main {
       ta.animate();
     }
   }
-
 
   #navAnimation(el, inview) {
     if (inview) {
@@ -78,7 +85,6 @@ class Main {
       el.classList.remove("inview");
     }
   }
-
 }
 
 const main = new Main();
