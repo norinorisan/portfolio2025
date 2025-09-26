@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,6 +16,18 @@
       content="フリーランスWEBコーダーのNoriのポートフォリオサイトです。「Web制作を頼みたい」「既存のWebサイトを修正・改善したい」などぜひ、お気軽にご相談ください。"
     />
     <script src="scripts/vendors/pace.js" defer></script>
+
+
+
+
+    <link
+      rel="preload"
+      href="styles/style.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="styles/style.css" /></noscript>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -52,10 +64,11 @@
     <script src="scripts/libs/text-animation.js" defer></script>
     <script src="scripts/libs/accordion.js" defer></script>
     <script src="scripts/libs/gsap.js" defer></script>
-    
-    <script src="scripts/main.js" defer></script>
 
+    <script src="scripts/main.js" defer></script>
   </head>
+
+
   <body>
     <div id="global-container">
       <div id="container">
@@ -1611,7 +1624,7 @@
                     <p>
                       A.メールであれば平日9時～23時頃まで3時間以内にご対応いたします。
                       <br />Zoomは平日19時～23時頃までご対応可能です。
-                      <br>必要に応じて土日や早朝・夜の稼働も可能です。
+                      <br />必要に応じて土日や早朝・夜の稼働も可能です。
                     </p>
                   </div>
                 </div>
