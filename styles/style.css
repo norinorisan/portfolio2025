@@ -1,6 +1,7 @@
 :root {
   --main-width: 1070px;
   --text-size: clamp(1rem, 2vw, 2rem);
+  --color-base: rgb(130, 177, 238);
 }
 
 
@@ -1314,9 +1315,7 @@ main {
   background-image: url(../images/facebook.svg);
 } /*# sourceMappingURL=style.css.map */
 
-#service {
 
-}
 
 .service {
   padding-block: 40px;
@@ -1555,7 +1554,8 @@ main {
 .icon-section {
   width: 100%;
   height: 100vh;
-  background-color: #111;
+  /* background-color: #111; */
+  background-color: white;
   overflow: hidden;
   user-select: none;
   position: relative;
@@ -1565,7 +1565,7 @@ main {
     top: 50%;
     left: 50%;
     color: rgba(255, 255, 255, 0.644);
-    text-shadow: 0 0 10px #5af1a5;
+    text-shadow: 0 0 10px var(--color-base);
     z-index: 1;
     transform: translate(-50%, -50%);
 
@@ -1586,15 +1586,16 @@ main {
   }
 
   i {
-    color: rgba(0, 0, 0, 0.5);
+    /* color: rgba(0, 0, 0, 0.5); */
+    color: white;
     padding: 0 5px;
     user-select: none;
     transition: 1s;
 
     &:hover {
       transition: 0s;
-      color: #c65af1;
-      text-shadow: 0 0 120px #c65af1;
+      color: var(--color-base);
+      text-shadow: 0 0 120px var(--color-base);
     }
   }
 }
@@ -1638,7 +1639,7 @@ main {
   display: grid;
   justify-content: center;
   align-content: center;
-  background-color: #0e100f;
+  background-color: white;
   height: 100svh;
   margin: 0;
   overflow: hidden;
@@ -1661,7 +1662,7 @@ main {
   --size: 24px;
   width: var(--size);
   height: var(--size);
-  background-color: violet;
+  background-color: var(--color-base);
   border-radius: 50%;
   will-change: transform;
   cursor: pointer;
@@ -1797,9 +1798,9 @@ main {
   margin-inline: auto;
   z-index: 20;
   color: white;
-  background: rgba(197, 232, 238, 0.28);
+  background: rgba(4, 197, 231, 0.28);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(8.5px);
   -webkit-backdrop-filter: blur(8.5px);
   border: 1px solid rgba(238, 197, 197, 0.54);
@@ -1885,7 +1886,7 @@ main {
   perspective: 2000px;
   perspective-origin: center top;
   transform-style: preserve-3d;
-  background: linear-gradient(0deg, hsl(287, 100%, 72%) 0%, #6036f9 100%), #fff;
+  background: linear-gradient(0deg, var(--color-base) 0%, #6036f9 100%), #fff;
   overflow: hidden;
 }
 
@@ -2051,7 +2052,7 @@ button:hover {
 .text-flow__base {
   display: block;
   position: relative;
-  color: violet;
+  color: var(--color-base);
 }
 
 .text-flow__base.message-flow__base {
